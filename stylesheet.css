@@ -1,0 +1,176 @@
+/* general body */
+body {
+  background-color: #A7C7E7;
+  font-family: 'Lato';
+  /*#EBE6D9*/
+}
+
+.title {
+  margin-top: 30px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  font-size: 70px;
+}
+
+.box {
+  background-color: #7393B3;
+  border-radius: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 25px;
+  line-height: 40px;
+}
+
+.box-title {
+  float: left;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.descr {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.icon:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+/* navigation bar */
+*{transition: all 0.3s ease-in-out;}
+
+.navbar {
+  background-color: #7393B3;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.name {
+  float: left;
+  font-size: 25px;
+  color: #FFFFFF;
+  padding: 0px 16px;
+}
+
+nav {
+  float: right;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin: 15px;
+  }
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #A7C7E7;
+    border-radius: 20px;
+  }
+  
+  .active {
+    background-color: #A7C7E7;
+    border-radius: 20px;
+  }
+
+/* home page */
+.home-container {
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.home-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 90px;
+}
+
+.home-icon {
+  max-width:80px;
+  border-radius:50px;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.resume-btn {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #7393B3;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 32px;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Lato';
+}
+
+.resume-btn:hover {
+  background-color: #A7C7E7;
+}
+
+/* about page */
+
+.about {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+span {
+  background-color: #7393B3;
+  border-radius: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 25px;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.edu-title:hover {
+  color: #A7C7E7;
+}
+
+.about-icon {
+  max-width:50px;
+  border-radius:50px;
+  margin-left:10px;
+}
+
+.date {
+  float: right;
+  color: #FFFFFF;
+  font-size: 20px;
+}
