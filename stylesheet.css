@@ -33,7 +33,7 @@ body {
 
 .descr {
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -113,7 +113,6 @@ ul {
 }
 
 .home-icon {
-  max-width:80px;
   border-radius:50px;
   position: absolute;
   top: 60%;
@@ -141,14 +140,13 @@ ul {
 }
 
 /* about page */
-
 .about {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
 
-span {
+.about-span {
   background-color: #7393B3;
   border-radius: 40px;
   margin-left: 40px;
@@ -164,13 +162,104 @@ span {
 }
 
 .about-icon {
-  max-width:50px;
-  border-radius:50px;
-  margin-left:10px;
+  border-radius: 50px;
+  margin-left: 10px;
 }
 
 .date {
   float: right;
   color: #FFFFFF;
   font-size: 20px;
+}
+
+/* experience page */
+/*.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f1f1f1;
+}*/
+
+.skill-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill-first {
+  margin-top: 20px;
+}
+
+.skill-next {
+  margin-top: 20px;
+  margin-left: 180px;
+}
+
+.skill-span {
+  vertical-align: middle;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.skill-icon {
+  vertical-align: middle;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+
+.emails {
+  color: #FFFFFF;
+}
+
+.emails:hover {
+  color:#A7C7E7;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }

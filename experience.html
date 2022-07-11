@@ -4,35 +4,67 @@
         <title>Experience</title>
         <link href="stylesheet.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-      <div class="navbar">
-        <div class="name">
-            <p>&nbsp;&nbsp;&nbsp; Amy Chitnumsab</p>
+        <div class="navbar">
+            <div class="name">
+                <p>&nbsp;&nbsp;&nbsp; Amy Chitnumsab</p>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="experience.html" class="active">Experience</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="skills.html">Skills</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="experience.html" class="active">Experience</a>
-                </li>
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="skills.html">Skills</a>
-                </li>
-                <li>
-                    <a href="contacts.html">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-      </div>
-      <div class="title">Experience</div>
+        <div class="title">Experience</div>
+        <!--
+            <button class="collapsible">Open Section 1</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible">Open Section 2</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible">Open Section 3</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+            </script>
+        -->
     </body>
 </html>
