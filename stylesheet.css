@@ -165,19 +165,32 @@ ul {
 
 /*************************** HOME PAGE ***************************/
 .home-container {
-  position: relative;
-  text-align: center;
+  /*position: relative;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 30px;
   color: #5193B3;
   height: 100vh;
 }
 
+/*.home-bg {
+  display: flex;
+  background-size: cover;
+  margin: 0;
+}*/
+
 .home-title {
-  position: absolute;
+  /*position: absolute;
   top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%;*/
+  text-align: center;
+  /*transform: translate(-50%, -50%);*/
   font-weight: bold;
   font-size: 6.5vw;
+  color: #5193B3;
   /*font-size: 90px;*/
 }
 
@@ -185,24 +198,23 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 150px;
-  margin-top: 20px;
+  column-gap: 120px;
 }
 
 .home-icon {
-  width:80px;
-  height:80px;
-  border-radius:50px;
-  position: absolute;
-  top: 60%;
-  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  /*position: absolute;
+  top: 60%;*/
+  /*transform: translate(-50%, -50%);*/
 }
 
 .resume-btn {
-  position: absolute;
+  /*position: absolute;
   top: 78%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
   background-color: #5193B3;
   border: none;
   border-radius: 20px;
@@ -260,9 +272,9 @@ ul {
 /*************************** PROJECTS PAGE ***************************/
 .demo {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  gap: 30px;
+  column-gap: 20px;
 }
 
 .demo-descr {
@@ -332,52 +344,7 @@ a:active {
 }
 
 /*************************** RESPONSIVE DESIGN ***************************/
-@media screen and (max-width: 1000px) {
-  .name {
-    font-size: 20px;
-  }
-
-  .home-title {
-    font-size: 65px;
-  }
-
-  .home-btns {
-    column-gap: 130px;
-  }
-
-  .title-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .about {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
-  .portrait {
-    align-self: center;
-    margin-top: 20px;
-    margin-left: 0px;
-    max-width: 300px;
-  }
-
-  .after-title {
-    margin-top: 15px;
-  }
-
-  .box-top {
-    flex-flow: column wrap;
-    row-gap: 10px;
-  }
-
-  .interests {
-    flex-flow: column wrap;
-    row-gap: 20px;
-  }
-}
-
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 750px) {
   .name {
     font-size: 20px;
   }
@@ -387,15 +354,21 @@ a:active {
   }
 
   .after-title {
+    margin-top: 15px;
     font-size: 50px;
   }
 
   .home-title {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .home-btns {
-    column-gap: 110px;
+    column-gap: 60px;
+  }
+
+  .home-icon {
+    width: 80px;
+    height: 80px;
   }
 
   .title-icon {
@@ -412,7 +385,76 @@ a:active {
     align-self: center;
     margin-top: 20px;
     margin-left: 0px;
-    max-width: 300px;
+    max-width: 200px;
+  }
+
+  .box-top {
+    flex-flow: column wrap;
+    row-gap: 10px;
+  }
+
+  .interests {
+    flex-flow: column wrap;
+    row-gap: 20px;
+  }
+
+  .demo {
+    justify-content: flex-start;
+    align-content: center;
+    flex-flow: column;
+  }
+
+  .demo-descr {
+    flex-basis: 0px;
+  }
+
+  .video {
+    width: 340px;
+    height: 191px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .name {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .after-title {
+    font-size: 30px;
+  }
+
+  .home-title {
+    font-size: 30px;
+  }
+
+  .home-btns {
+    column-gap: 40px;
+  }
+
+  .home-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .title-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .portrait {
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    max-width: 100px;
   }
 
   .after-title {
@@ -427,5 +469,20 @@ a:active {
   .interests {
     flex-flow: column wrap;
     row-gap: 20px;
+  }
+
+  .demo {
+    justify-content: flex-start;
+    align-content: center;
+    flex-flow: column;
+  }
+
+  .demo-descr {
+    flex-basis: 0px;
+  }
+
+  .video {
+    width: 200px;
+    height: 113px;
   }
 }
