@@ -70,6 +70,8 @@ body {
 }
 
 .title-icon {
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
 }
 
@@ -188,6 +190,8 @@ ul {
 }
 
 .home-icon {
+  width:80px;
+  height:80px;
   border-radius:50px;
   position: absolute;
   top: 60%;
@@ -217,7 +221,14 @@ ul {
 /*************************** ABOUT PAGE ***************************/
 .about {
   display: flex;
+  flex-direction: row;
   align-items: center;
+}
+
+.portrait {
+  max-width: 250px;
+  border-radius: 50px;
+  margin-left: 40px;
 }
 
 .about-span {
@@ -241,8 +252,9 @@ ul {
 .interests {
   margin-top: 20px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
+  column-gap: 20px;
 }
 
 /*************************** PROJECTS PAGE ***************************/
@@ -332,11 +344,50 @@ a:active {
   .home-btns {
     column-gap: 130px;
   }
+
+  .title-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .portrait {
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    max-width: 300px;
+  }
+
+  .after-title {
+    margin-top: 15px;
+  }
+
+  .box-top {
+    flex-flow: column wrap;
+    row-gap: 10px;
+  }
+
+  .interests {
+    flex-flow: column wrap;
+    row-gap: 20px;
+  }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
   .name {
     font-size: 20px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .after-title {
+    font-size: 50px;
   }
 
   .home-title {
@@ -345,5 +396,36 @@ a:active {
 
   .home-btns {
     column-gap: 110px;
+  }
+
+  .title-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .portrait {
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    max-width: 300px;
+  }
+
+  .after-title {
+    margin-top: 15px;
+  }
+
+  .box-top {
+    flex-flow: column wrap;
+    row-gap: 10px;
+  }
+
+  .interests {
+    flex-flow: column wrap;
+    row-gap: 20px;
   }
 }
