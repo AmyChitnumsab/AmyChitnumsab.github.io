@@ -415,6 +415,7 @@ a:active {
     justify-content: flex-start;
     align-content: center;
     flex-flow: column;
+    row-gap: 20px;
   }
 
   .demo-descr {
@@ -426,12 +427,15 @@ a:active {
     height: 191px;
   }
 
+  .descr-box {
+    row-gap: 30px;
+  }
+
   .vert-boxes {
     flex-flow: column wrap;
     justify-content: center;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
     column-gap: 0px;
   }
 
@@ -442,6 +446,7 @@ a:active {
   
   .box {
     padding: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -463,7 +468,7 @@ a:active {
   }
 
   .home-btns {
-    column-gap: 60px;
+    column-gap: 80px;
   }
 
   .home-icon {
@@ -474,7 +479,7 @@ a:active {
   }
 
   .box-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .title-icon {
@@ -483,7 +488,7 @@ a:active {
   }
 
   .descr-pair {
-    gap: 15px;
+    gap: 40px;
   }
 
   .about {
@@ -524,6 +529,7 @@ a:active {
     justify-content: flex-start;
     align-content: center;
     flex-flow: column;
+    row-gap: 20px;
   }
 
   .demo-descr {
@@ -535,16 +541,20 @@ a:active {
     height: 100px;
   }
 
+  .descr-box {
+    row-gap: 30px;
+  }
+
   .descr {
     font-size: 15px;
   }
 
   .descr-text {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .about-span {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .vert-boxes {
@@ -552,7 +562,6 @@ a:active {
     justify-content: center;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
     column-gap: 0px;
   }
 
@@ -563,5 +572,6 @@ a:active {
   
   .box {
     padding: 20px;
+    margin-bottom: 20px;
   }
 }
