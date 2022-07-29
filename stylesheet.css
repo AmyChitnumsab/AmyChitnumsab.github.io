@@ -344,7 +344,7 @@ a:active {
 }
 
 /*************************** RESPONSIVE DESIGN ***************************/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .name {
     font-size: 20px;
   }
@@ -383,7 +383,7 @@ a:active {
   }
 
   .about {
-    flex-flow: column wrap;
+    flex-direction: column;
     row-gap: 20px;
   }
 
@@ -402,19 +402,19 @@ a:active {
   }
 
   .box-top {
-    flex-flow: column wrap;
+    flex-direction: column;
     row-gap: 10px;
   }
 
   .interests {
-    flex-flow: column wrap;
+    flex-direction: column;
     row-gap: 20px;
   }
 
   .demo {
     justify-content: flex-start;
     align-content: center;
-    flex-flow: column;
+    flex-direction: column;
     row-gap: 20px;
   }
 
@@ -432,7 +432,7 @@ a:active {
   }
 
   .vert-boxes {
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     margin-left: 20px;
     margin-right: 20px;
@@ -450,7 +450,7 @@ a:active {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 500px) {
   .name {
     font-size: 10px;
   }
@@ -492,7 +492,7 @@ a:active {
   }
 
   .about {
-    flex-flow: column wrap;
+    flex-direction: column;
     row-gap: 20px;
   }
 
@@ -516,19 +516,19 @@ a:active {
   }
 
   .box-top {
-    flex-flow: column wrap;
+    flex-direction: column;
     row-gap: 10px;
   }
 
   .interests {
-    flex-flow: column wrap;
+    flex-direction: column;
     row-gap: 20px;
   }
 
   .demo {
     justify-content: flex-start;
     align-content: center;
-    flex-flow: column;
+    flex-direction: column;
     row-gap: 20px;
   }
 
@@ -558,7 +558,7 @@ a:active {
   }
 
   .vert-boxes {
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     margin-left: 20px;
     margin-right: 20px;
