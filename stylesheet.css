@@ -31,15 +31,15 @@ body {
 }
 
 .hori-box {
-  margin-bottom: 20px;
   margin-left: 40px;
   margin-right: 40px;
 }
 
 .box {
   flex-grow: 1;
-  background-color: #5193B3;
   margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #5193B3;
   border-radius: 40px;
   padding: 25px;
   line-height: 30px;
@@ -363,7 +363,7 @@ a:active {
   }
 
   .home-btns {
-    column-gap: 60px;
+    column-gap: 100px;
   }
 
   .home-icon {
@@ -460,7 +460,7 @@ a:active {
   }
 
   .after-title {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 50px;
   }
 
@@ -469,7 +469,7 @@ a:active {
   }
 
   .home-btns {
-    column-gap: 60px;
+    column-gap: 80px;
   }
 
   .home-icon {
@@ -485,11 +485,12 @@ a:active {
   }
 
   .descr-pair {
-    gap: 15px;
+    gap: 30px;
   }
 
   .about {
     flex-direction: column;
+    justify-content: space-evenly; 
     row-gap: 20px;
   }
 
@@ -510,6 +511,10 @@ a:active {
   .box-top {
     flex-direction: column;
     row-gap: 10px;
+  }
+
+  .box-heading {
+    gap: 30px;
   }
 
   .interests {
@@ -543,6 +548,7 @@ a:active {
     margin-left: 20px;
     margin-right: 20px;
     column-gap: 0px;
+    row-gap: 0px;
   }
 
   .hori-box {
@@ -552,7 +558,6 @@ a:active {
   
   .box {
     padding: 20px;
-    margin-bottom: 20px;
   }
   
   /*.name {
