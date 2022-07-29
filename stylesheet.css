@@ -412,11 +412,32 @@ a:active {
     width: 340px;
     height: 191px;
   }
+
+  .vert-boxes {
+    flex-flow: column wrap;
+    justify-content: center;
+    /*row-gap: 20px;*/
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .hori-box {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .box {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 360px) {
   .name {
     font-size: 10px;
+  }
+
+  .home-container {
+    row-gap: 40px;
   }
 
   .title {
@@ -432,17 +453,21 @@ a:active {
   }
 
   .home-btns {
-    column-gap: 40px;
+    column-gap: 60px;
   }
 
   .home-icon {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .box-title {
+    font-size: 24px;
   }
 
   .title-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .about {
@@ -453,6 +478,7 @@ a:active {
   .portrait {
     align-self: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 0px;
     max-width: 100px;
   }
@@ -482,7 +508,36 @@ a:active {
   }
 
   .video {
-    width: 200px;
-    height: 113px;
+    width: 180px;
+    height: 100px;
+  }
+
+  .descr {
+    font-size: 15px;
+  }
+
+  .descr-text {
+    font-size: 18px;
+  }
+
+  .about-span {
+    font-size: 18px;
+  }
+
+  .vert-boxes {
+    flex-flow: column wrap;
+    justify-content: center;
+    /*row-gap: 20px;*/
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .hori-box {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .box {
+    padding: 20px;
   }
 }
