@@ -1,7 +1,6 @@
 /*************************** GENERAL ***************************/
 body {
   margin: 0;
-  /*background-color: #F8E6CB;*/
   background-image: url(Images/Web\ background.png);
   background-size: cover;
   font-family: 'Lato';
@@ -133,39 +132,39 @@ body {
   color: #FFFFFF;
 }
 
-ul {
+nav {
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  column-gap: 1.56vw;
   list-style-type: none;
   margin: 15px;
   }
 
-  li {
-    float: left;
-  }
+nav a {
+  display: block;
+  font-size: 1.8vw;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1vw 2.5vw;
+  text-decoration: none;
+}
   
-  li a {
-    display: block;
-    font-size: 25px;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 14px 35px;
-    text-decoration: none;
-  }
+nav a:hover {
+  background-color: #62C4C3;
+  border-radius: 20px;
+}
   
-  li a:hover {
-    background-color: #62C4C3;
-    border-radius: 20px;
-  }
-  
-  .active {
-    background-color: #62C4C3;
-    border-radius: 20px;
-  }
+.active {
+  background-color: #62C4C3;
+  border-radius: 20px;
+}
+
+.navbar .pull-out {
+  display: none;
+}
 
 /*************************** HOME PAGE ***************************/
 .home-container {
-  /*position: relative;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,22 +175,11 @@ ul {
   height: 100vh;
 }
 
-/*.home-bg {
-  display: flex;
-  background-size: cover;
-  margin: 0;
-}*/
-
 .home-title {
-  /*position: absolute;
-  top: 40%;
-  left: 50%;*/
   text-align: center;
-  /*transform: translate(-50%, -50%);*/
   font-weight: bold;
   font-size: 6.5vw;
   color: #5193B3;
-  /*font-size: 90px;*/
 }
 
 .home-btns {
@@ -205,16 +193,9 @@ ul {
   width: 80px;
   height: 80px;
   border-radius: 50px;
-  /*position: absolute;
-  top: 60%;*/
-  /*transform: translate(-50%, -50%);*/
 }
 
 .resume-btn {
-  /*position: absolute;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
   background-color: #5193B3;
   border: none;
   border-radius: 20px;
@@ -290,34 +271,6 @@ ul {
   border-radius: 30px;
 }
 
-/*.skill-box {
-  display: flex;
-  flex-direction: row;
-}
-
-.skill-first {
-  margin-top: 20px;
-}
-
-.skill-next {
-  margin-top: 20px;
-  margin-left: 180px;
-}
-
-.skill-span {
-  vertical-align: middle;
-  color: #FFFFFF;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.skill-icon {
-  vertical-align: middle;
-  margin-left: 10px;
-  border-radius: 50px;
-}*/
-
-
 /*************************** LINKS ***************************/
 .emails {
   color: #FFFFFF;
@@ -344,11 +297,57 @@ a:active {
 }
 
 /*************************** RESPONSIVE DESIGN ***************************/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) { /**********TABLET SCREEN SIZE**********/
+  /*TOP NAVIGATION BAR*/
   .name {
     font-size: 20px;
   }
 
+  nav {
+    display: block;
+    text-decoration: none;
+    padding: 0px 40px;
+  }
+
+  nav a {
+    margin: 10px;
+    font-size: 17px;
+  }
+
+  .navbar a {
+    display: block;
+    color: #FFFFFF;
+    padding: 20px 20px;
+  }
+
+  .navbar a.active {
+    background-color: #62C4C3;
+  }
+
+  .navbar .pull-out:hover {
+    color: #62C4C3;
+  }
+
+  .navbar a:not(:active) {
+    display: none;
+  }
+
+  .navbar a.pull-out {
+    display: block;
+  }
+
+  .navbar.responsive .pull-out {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    display: block;
+    text-align: center;
+  }
+
+  /*TEXTBOXES*/
   .title {
     font-size: 50px;
   }
@@ -358,77 +357,9 @@ a:active {
     font-size: 50px;
   }
 
-  .home-title {
-    font-size: 70px;
-  }
-
-  .home-btns {
-    column-gap: 100px;
-  }
-
-  .home-icon {
-    width: 70px;
-    height: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
   .title-icon {
     width: 40px;
     height: 40px;
-  }
-
-  .descr-pair {
-    gap: 15px;
-  }
-
-  .about {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
-  .portrait {
-    align-self: center;
-    margin-top: 20px;
-    margin-left: 0px;
-    max-width: 200px;
-  }
-
-  .about-span {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
-    font-size: 20px;
-  }
-
-  .box-top {
-    flex-direction: column;
-    row-gap: 10px;
-  }
-
-  .interests {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
-  .demo {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    row-gap: 20px;
-  }
-
-  .demo-descr {
-    flex-basis: 0px;
-  }
-
-  .video {
-    width: 380px;
-    height: 214px;
-  }
-
-  .descr-box {
-    row-gap: 30px;
   }
 
   .vert-boxes {
@@ -449,13 +380,130 @@ a:active {
     padding: 20px;
     margin-bottom: 20px;
   }
+
+  .box-top {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .descr-box {
+    row-gap: 30px;
+  }
+
+  .descr-pair {
+    gap: 15px;
+  }
+
+  /*HOME PAGE*/
+  .home-title {
+    font-size: 70px;
+  }
+
+  .home-btns {
+    column-gap: 100px;
+  }
+
+  .home-icon {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /*ABOUT PAGE*/
+  .about {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .portrait {
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    max-width: 200px;
+  }
+
+  .about-span {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .interests {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  /*PROJECTS PAGE*/
+  .demo {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    row-gap: 20px;
+  }
+
+  .demo-descr {
+    flex-basis: 0px;
+  }
+
+  .video {
+    width: 380px;
+    height: 214px;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) { /**********PHONE SCREEN SIZE**********/
+  /*TOP NAVIGATION BAR*/
   .name {
     font-size: 20px;
   }
 
+  nav {
+    display: block;
+    text-decoration: none;
+    padding: 0px 40px;
+  }
+
+  nav a {
+    margin: 10px;
+    font-size: 17px;
+  }
+
+  .navbar a {
+    display: block;
+    color: #FFFFFF;
+    padding: 20px 20px;
+  }
+
+  .navbar a.active {
+    background-color: #62C4C3;
+  }
+
+  .navbar .pull-out:hover {
+    color: #62C4C3;
+  }
+
+  .navbar a:not(:active) {
+    display: none;
+  }
+
+  .navbar a.pull-out {
+    display: block;
+  }
+
+  .navbar.responsive .pull-out {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    display: block;
+    text-align: center;
+  }
+
+  /*TEXTBOXES*/
   .title {
     font-size: 50px;
   }
@@ -465,6 +513,43 @@ a:active {
     font-size: 50px;
   }
 
+  .title-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .vert-boxes {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    column-gap: 0px;
+    margin-bottom: 10px;
+  }
+
+  .hori-box {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .box {
+    padding: 20px;
+  }
+
+  .box-top {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+  .descr-box {
+    row-gap: 30px;
+  }
+
+  .descr-pair {
+    gap: 15px;
+  }
+
+  /*HOME PAGE*/
   .home-title {
     font-size: 50px;
   }
@@ -480,15 +565,7 @@ a:active {
     margin-bottom: 20px;
   }
 
-  .title-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .descr-pair {
-    gap: 15px;
-  }
-
+  /*ABOUT PAGE*/
   .about {
     flex-direction: column;
     justify-content: space-evenly; 
@@ -509,16 +586,12 @@ a:active {
     font-size: 18px;
   }
 
-  .box-top {
-    flex-direction: column;
-    row-gap: 10px;
-  }
-
   .interests {
     flex-direction: column;
     row-gap: 20px;
   }
 
+  /*PROJECTS PAGE*/
   .demo {
     justify-content: flex-start;
     align-content: center;
@@ -533,27 +606,5 @@ a:active {
   .video {
     width: 340px;
     height: 191px;
-  }
-
-  .descr-box {
-    row-gap: 30px;
-  }
-
-  .vert-boxes {
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    column-gap: 0px;
-    margin-bottom: 10px;
-  }
-
-  .hori-box {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .box {
-    padding: 20px;
   }
 }
