@@ -125,11 +125,7 @@ body {
 }
 
 .name {
-  margin-left: 25px;
-  padding: 0px 16px;
-  text-align: center;
-  font-size: 25px;
-  color: #FFFFFF;
+  padding: 10px 40px;
 }
 
 nav {
@@ -300,32 +296,23 @@ a:active {
 @media screen and (max-width: 1000px) { /**********TABLET SCREEN SIZE**********/
   /*TOP NAVIGATION BAR*/
   .name {
-    font-size: 20px;
+    position: absolute;
+    top: 0;
   }
 
   nav {
-    display: block;
-    text-decoration: none;
-    padding: 0px 40px;
+    padding: 0px 10px;
   }
 
   nav a {
     margin: 10px;
     font-size: 17px;
-  }
-
-  .navbar a {
-    display: block;
-    color: #FFFFFF;
-    padding: 20px 20px;
+    padding: 15px 15px;
+    text-align: left;
   }
 
   .navbar a.active {
     background-color: #62C4C3;
-  }
-
-  .navbar .pull-out:hover {
-    color: #62C4C3;
   }
 
   .navbar a:not(:active) {
@@ -334,6 +321,12 @@ a:active {
 
   .navbar a.pull-out {
     display: block;
+    padding: 30px 20px;
+    color: #FFFFFF;
+  }
+
+  .navbar .pull-out:hover {
+    color: #62C4C3;
   }
 
   .navbar.responsive .pull-out {
@@ -342,9 +335,15 @@ a:active {
     top: 0;
   }
 
+  .navbar.responsive nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 80px;
+  }
+
   .navbar.responsive a {
     display: block;
-    text-align: center;
   }
 
   /*TEXTBOXES*/
@@ -456,32 +455,23 @@ a:active {
 @media screen and (max-width: 500px) { /**********PHONE SCREEN SIZE**********/
   /*TOP NAVIGATION BAR*/
   .name {
-    font-size: 20px;
+    position: absolute;
+    top: 0;
   }
 
   nav {
-    display: block;
-    text-decoration: none;
-    padding: 0px 40px;
+    padding: 0px 10px;
   }
 
   nav a {
     margin: 10px;
     font-size: 17px;
-  }
-
-  .navbar a {
-    display: block;
-    color: #FFFFFF;
-    padding: 20px 20px;
+    padding: 15px 15px;
+    text-align: left;
   }
 
   .navbar a.active {
     background-color: #62C4C3;
-  }
-
-  .navbar .pull-out:hover {
-    color: #62C4C3;
   }
 
   .navbar a:not(:active) {
@@ -490,6 +480,12 @@ a:active {
 
   .navbar a.pull-out {
     display: block;
+    padding: 30px 20px;
+    color: #FFFFFF;
+  }
+
+  .navbar .pull-out:hover {
+    color: #62C4C3;
   }
 
   .navbar.responsive .pull-out {
@@ -498,9 +494,15 @@ a:active {
     top: 0;
   }
 
+  .navbar.responsive nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 80px;
+  }
+
   .navbar.responsive a {
     display: block;
-    text-align: center;
   }
 
   /*TEXTBOXES*/
