@@ -1,7 +1,8 @@
 /*************************** GENERAL ***************************/
 body {
   margin: 0;
-  background-image: url(Images/Web\ background.png);
+  /*background-image: url(Images/Web\ background.png);*/
+  background-color: #62C4C3;
   background-size: cover;
   font-family: 'Lato';
 }
